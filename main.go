@@ -17,7 +17,7 @@ func main() {
 	routes.RegisterRoutes(router, wsService)
 
 	log.Println("Servidor WebSocket escuchando en :8088")
-	if err := router.Run(":8088"); err != nil {
+	if err := router.Run(":8080"); err != nil {
 		log.Fatalf("Error iniciando servidor: %v", err)
 	}
 }
